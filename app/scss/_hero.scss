@@ -10,15 +10,15 @@
 
     &__image{
         background-image: url('/images/bg-intro-mobile.svg');
+        position: relative;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        position: relative;
         min-height: 17.5625rem;
 
         @include breakpoint-up(medium){
             min-height: 25rem;
-            background-image: center 60%;
+            background-image: center 70%;
         }
 
         @include breakpoint-up(large){
@@ -39,13 +39,13 @@
                 content: "";
                 position: absolute;
                 height: 100%;
-                width: 100%;
-                background-image: url('/images/bg-intro-desktop.svg');
+                background-image: url(/images/bg-intro-desktop.svg);
                 background-repeat: no-repeat;
                 background-position: center bottom;
                 width: 150%;
-                background-size: 122%;
-                background-position: 0% 83%;
+                background-size: 110%;
+                background-position: -4% 65%;
+
             }
         }
 
@@ -63,11 +63,11 @@
                 background-size: 52%;
             }
             @include breakpoint-up(large){
-                height: 120%;
-                width: 122%;
-                background-size: 94%;
+                height: 143%;
+                width: 129%;
+                background-size: 85%;
                 background-position: center 150%;
-                left: 22%;
+                left: 23%;
             }
         }
     }

@@ -1,5 +1,6 @@
 .header {
-
+position:relative;
+z-index: 1;
     // Hamburger Open Styles
     &.open {
         .header__toggle {
@@ -26,16 +27,16 @@
     }
 
     nav {
+        position: relative;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
-        position: relative;
         background-color: $white ;
     }
 
     &__logo {
         img {
-        height: 1.375rem;
-        width: 8.8125rem;
+            width: 8.8125rem;
+            height: 1.375rem;
             }
             }
 
@@ -74,12 +75,14 @@
             position: relative;
             font-size: $font-small;
             color: $grayishBlue;
+            font-weight: 400;
             transition: color 300ms ease-in-out;
             &:not(:last-child){
                 margin-right: 32px;    
             }
             &::before {
                 content: "";
+                display: block;
                 position: absolute;
                 height: 5px;
                 left: 0;
@@ -98,10 +101,5 @@
 
             }
         }
-        
     }
-
-    
-
-    
 }
