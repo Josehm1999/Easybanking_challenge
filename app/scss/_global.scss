@@ -85,6 +85,7 @@ button, .button{
   font-weight: 400;
   font-size: $font-small;
   transition: opacity 300ms ease-in-out;
+  overflow: hidden;
   
   
   &::before {
@@ -95,12 +96,10 @@ button, .button{
       bottom: 0;
       left:0;
       opacity: 0;
+      background-color: rgba(255,255,255,0.25);
       transition: opacity 150ms ease-in-out;
             }
 
-    &:hover{
-        opacity:0.75;
-            }
 
     &:hover::before{
         opacity: 1;
@@ -167,4 +166,7 @@ button, .button{
     &--pl{
         padding-left: 1.5rem; 
     }
+
+
+
   }
