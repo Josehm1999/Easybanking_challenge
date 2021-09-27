@@ -652,7 +652,7 @@ button:hover::before, .button:hover::before {
 .footer {
   background-color: #2d314d;
   color: white;
-  padding: 2.875rem;
+  padding: 2.875rem 2.875rem 0.5rem 2.875rem;
   text-align: center;
 }
 
@@ -785,7 +785,7 @@ button:hover::before, .button:hover::before {
   }
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .footer__cta a.button {
     margin-bottom: 2rem;
   }
@@ -806,5 +806,14 @@ button:hover::before, .button:hover::before {
         -ms-grid-row-align: end;
         align-self: end;
   }
+}
+
+.footer__attribution {
+  font-size: 1rem;
+  margin-top: 2.5rem;
+}
+
+.footer__attribution a {
+  color: #31d35c;
 }
 /*# sourceMappingURL=style.css.map */

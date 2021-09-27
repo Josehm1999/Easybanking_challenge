@@ -2,7 +2,8 @@
 
     background-color: $darkBlue;
     color: $white;
-    padding: 2.875rem;
+    padding: 2.875rem 2.875rem 0.5rem 2.875rem;
+    
     text-align: center;
     
     .container{
@@ -12,7 +13,8 @@
             grid-template-rows: 1fr auto;
             grid-template-areas: 
                 "logo col1 col2 cta"
-                "social col1 col2 copy" ;
+                "social col1 col2 copy";
+                
             justify-items: start;
             gap: 1rem;
         }
@@ -96,8 +98,9 @@
             justify-self: end;
             text-align: right;
         }
+
         a.button{
-        @include breakpoint-down(small){
+        @include breakpoint-down(medium){
             margin-bottom: 2rem;
         }
         }
@@ -111,6 +114,14 @@
             justify-self: end;
             text-align: right;
             align-self: end;
+        }
+    }
+    &__attribution{
+        font-size: 1rem;
+        margin-top: 2.5rem;
+        
+        a{
+            color: $limeGreen;
         }
     }
 }
